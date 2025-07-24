@@ -1,0 +1,321 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #F7F7F7; /* Soft White */
+  color: #333333; /* Charcoal Gray */
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto 3rem auto;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ffffff;
+  padding: 1rem 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #003366; /* Deep Blue */
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, #2563EB 0%, #14B8A6 100%);
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 1rem;
+  color: white;
+  border-radius: 12px;
+  margin: 2rem auto;
+  max-width: 1100px;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.hero-content .highlight {
+  color: #d9d564; /* Warm yellow highlight */
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  color: #E0E7FF; /* Light pastel */
+  margin-bottom: 2rem;
+}
+
+.btn-resume {
+  background: linear-gradient(135deg, #FCD34D 0%, #FFF9C4 100%); /* Yellow */
+  color: #1E293B; /* Dark text */
+  padding: 0.85rem 2rem;
+  font-weight: 700;
+  border-radius: 6px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+.btn-resume:hover {
+  background-color: #f5ee65;
+}
+
+/* KPI Counters */
+.kpi-counter {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  background: #ffffff;
+  padding: 3rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+}
+
+.kpi-box {
+  text-align: center;
+}
+
+.kpi-box h3 {
+  font-size: 2.5rem;
+  color: #FCD34D;
+  margin-bottom: 0.25rem;
+  font-weight: 700;
+}
+
+.kpi-box p {
+  font-size: 1.1rem;
+  color: #666666;
+}
+
+/* Section Titles */
+section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #003366;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Experience Timeline */
+.timeline {
+  background: linear-gradient(135deg, #2563EB 0%, #14B8A6 100%);
+  border-left: 4px solid #FCD34D; /* Keep yellow accent line */
+  padding: 2rem 2rem 2rem 3rem;
+  max-width: 900px;
+  margin: 0 auto 3rem auto;
+  border-radius: 12px;
+  color: white; /* White text on gradient */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 8px;
+  width: 20px;
+  height: 20px;
+  background-color: #FCD34D; /* Yellow circle for contrast */
+  border-radius: 50%;
+  border: 3px solid transparent;
+}
+
+.timeline-item h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: white; /* White heading */
+}
+
+.timeline-item p {
+  color: #E0E7FF; /* Light pastel for paragraph */
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* Skills */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  max-width: 900px;
+  margin: 0 auto 3rem auto;
+}
+
+.skills-list span {
+  background: linear-gradient(135deg, #FCD34D 0%, #FFF9C4 100%);
+  color: #333333;
+  padding: 10px 18px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  cursor: default;
+  box-shadow: 0 4px 8px rgba(252, 211, 77, 0.4);
+}
+
+.skills-list span:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(252, 211, 77, 0.7);
+}
+
+
+/* Projects */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 2rem auto 4rem auto;
+  padding: 2rem;
+  background: linear-gradient(135deg, #2563EB 0%, #14B8A6 100%);
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
+}
+
+/* Project Cards */
+.project-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.project-card h3 {
+  margin-bottom: 0.8rem;
+  color: #003366;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.project-card p {
+  color: #4B5563;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Project Tags styled like skills pills */
+.project-tags {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.project-tags span {
+  background: linear-gradient(135deg, #FCD34D 0%, #fde68a 100%);
+  color: #1E293B;
+  padding: 10px 18px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: transform 0.2s ease;
+  cursor: default;
+}
+
+.project-tags span:hover {
+  transform: scale(1.1);
+}
+
+/* Certifications */
+.certifications {
+  display: flex;
+  overflow-x: auto;
+  gap: 1.5rem;
+  padding: 1rem 0 3rem 0;
+  max-width: 900px;
+  margin: 0 auto 3rem auto;
+}
+
+.cert-card {
+  flex: 0 0 auto;
+  background:linear-gradient(135deg, #FCD34D 0%, #FFF9C4 100%);;
+  padding: 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.07);
+  min-width: 180px;
+  font-weight: 600;
+  color: #003366;
+  text-align: center;
+  cursor: default;
+  user-select: none;
+}
+
+.contact-wrapper {
+  text-align: center;
+  margin: 0 auto 4rem auto;
+}
+
+.contact-wrapper h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #003366;
+  margin-bottom: 2rem;
+}
+
+.contact-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.contact-card {
+  display: block;
+  background: linear-gradient(135deg, #2563EB, #14B8A6);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 1.2rem 2rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+  background: linear-gradient(135deg, #1D4ED8, #0D9488); /* Slight dark hover */
+}
+
+
